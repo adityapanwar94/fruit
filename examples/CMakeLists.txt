@@ -11,7 +11,7 @@ foreach(source_file ${examples_srcs})
   add_executable(${name} ${source_file})
   target_link_libraries(${name} ${Caffe_LINK})
   caffe_default_properties(${name})
-
+  
   # set back RUNTIME_OUTPUT_DIRECTORY
   set_target_properties(${name} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/examples/${folder}")
